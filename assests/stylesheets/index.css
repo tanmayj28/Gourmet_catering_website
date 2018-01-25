@@ -1,0 +1,435 @@
+.test-title{
+	float: left;
+}
+
+.test-navbar {
+  width: 100%;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.test-right {
+  float: right;
+}
+
+.test-right-diff{
+  float: right;
+}
+
+.test-right-nav {
+  float: right;
+  width: 18%;
+}
+
+body {
+	font-family: "Times New Roman", Georgia, Serif;
+	margin: 0px;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+  font-weight: 400;
+}
+
+.test-img-last2{
+	width:100%;
+}
+
+.test-padding {
+  padding: 8px 16px!important;
+}
+
+.test-card{
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.test-navbar .test-navbar-item {
+  padding: 8px 16px ;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+}
+
+.test-menu-align{
+	font-size: 18px;
+	height:750px;
+	text-align: center;
+}
+
+.test-menu-image {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	height: 1000px;
+}
+
+.test-contact{
+  font-size: 18px;
+	height:750px;
+	text-align: center;	
+}
+
+.test-contact-p {
+  font-size: 20px;
+  text-align: center;
+}
+
+input{
+	width:100%;
+	padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+button{
+  font-size: 20px;
+  padding: 14px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  width: 250px;
+  float: left;
+}
+
+::placeholder{
+  font-size: 15px;
+  opacity: 1;
+}
+
+.test-text-on-image{
+  text-align: center;
+  color: #696969;
+  height: 750px;
+}
+
+.test-bottom-left-text{
+	position: absolute;
+  bottom: 120px;
+  left: 40px;
+  font-size: 40px;
+}
+
+.test-textarea{
+ 	width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+/*p{
+  padding: 8px 16px;
+  text-align: center;
+  font-family: "Playfair Display";
+}*/
+
+.test-width-about{
+	width:650px;
+	line-height: 200%;
+	font-size: 20px;
+	height:750px;
+	float:right;
+}
+
+.test-about-index{
+	float: left;
+  height: 75px;
+  width: 235px;
+  font-family: Veranda;
+}
+
+.test-about-text-index{
+	line-height: 150%;
+	font-size: 20px;
+	height:25%;
+  margin-left: 2cm;
+}
+
+.test-about-text-index-diff{
+	line-height: 150%;
+	font-size: 20px;
+	height:25%;
+  margin-left: 2cm;
+}
+
+.test-about-brown-index{
+	line-height: 150%;
+	font-size: 20px;
+  height:200px;
+  margin-left: 2cm;
+}
+
+.test-about-brown-diff{
+	line-height: 200%;
+	font-size: 20px;
+  height:200px;
+}
+
+.test-brown-word{
+	background-color: #D3D3D3; 
+}
+
+.test-about-heading-index{
+	text-align: center;
+	line-height: 50%;
+	font-size: 27px;
+}
+
+.test-about-sub-heading-index{
+	text-align: center;
+	line-height: 50%;
+	font-size: 22px;
+}
+
+.test-menu-head-index{
+	font-size: 25px;
+	text-align: center;
+}
+
+.test-menu-text-index-image{
+	font-size: 18px;
+	height:55%;
+	width:50%; 
+	float: left;
+}
+.test-menu-text-index{
+	font-size: 18px;
+	height:800px;
+	width:600px; 
+	float: left;
+}
+
+.test-about-new{
+  height:800px;
+  width:600px; 
+  float: right;	 
+}
+
+.test-spacing-4px {
+  letter-spacing:4px;
+}
+
+
+.test-header-home{
+	max-width:1600px;
+	min-width:500px;
+}
+
+.test-img-last{
+	width:100%;
+}
+
+.test-top, .test-bottom {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  padding-top: 0px;
+  background-color: white;
+  letter-spacing:4px;
+}
+
+.test-white, .test-hover-white:hover {
+  color: #000!important;
+  background-color: #fff!important;
+}
+
+.test-wide {
+  letter-spacing: 4px;
+}
+
+.test-content {
+  max-width: 980px;
+  margin: auto;
+}
+
+.test-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.test-image2{
+	width:600px;
+	height:750px; 
+	float: right;
+}
+
+.test-image-height{
+	height:800px;
+}
+
+.test-display-bottomleft {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.content{
+	max-width: 1200px;
+  margin: auto;
+}
+
+.test-footer{
+  position: bottom;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+.test-brown-color{
+	color: #A9A9A9
+}
+
+@media screen and (max-width:600px) {
+  .post,
+  .sc-image {
+    display: none;
+  }
+
+  .content{
+	max-width: 90%;
+  margin: auto;
+}
+  .test-menu-text-index{
+	font-size: 18px;
+	height:800px;
+	width:400px; 
+	float: none;
+}
+.test-menu-text-index-image{
+	height:0%;
+	width:50%; 
+	float: none;
+}
+
+.test-header-home{
+	max-width:100%;
+}
+.test-bottom-left-text{
+  display:none;
+}
+
+.test-about-new{
+  height:180%;
+  width:100%; 
+  float: none;	 
+}
+
+.test-about-brown-index{
+	line-height: 150%;
+	font-size: 18px;
+  height:280%;
+  margin-left: 1cm;
+}
+
+.test-about-text-index{
+	line-height: 150%;
+	font-size: 18px;
+  margin-left: 1cm;
+}
+.test-about-text-index-diff{
+	line-height: 150%;
+	font-size: 18px;
+	height:100%;
+	margin:0cm;
+}
+
+.test-text-on-image{
+  text-align: center;
+  color: #696969;
+  height: 250px;
+}
+
+.test-right-nav {
+  width: 100%;
+}
+
+.test-about-brown-diff{
+	line-height: 150%;
+	font-size: 20px;
+  height:100px;
+}
+
+.test-about-brown-index{
+	line-height: 150%;
+	font-size: 25px;
+  height:100%;
+}
+
+.test-width-about-diff{
+	width:100%;
+	line-height: 150%;
+	font-size: 20px;
+	height:100%;
+	float:none;
+}
+
+.test-about-heading-index{
+	text-align: center;
+	line-height: 50%;
+	height: 100%;
+	font-size: 27px;
+}
+
+.test-about-sub-heading-index{
+	text-align: center;
+	line-height: 50%;
+	font-size: 22px;
+}
+.test-about-text-about-image{
+ 	text-align: center;
+	width:100%;
+	margin: auto;
+  padding-left:100px;
+}
+
+.test-right-diff{
+  float: none;
+}
+
+.test-img-last2-centre{
+	display: block;
+	margin:0 auto;
+}
+}
+
+@media screen and (max-width:700px) {
+  #sidebar,
+  #about {
+  	float: none;
+  	width: 100%;
+  }
+
+.test-img-last2-centre{
+	display: block;
+	margin:0 auto;
+}
+
+.test-about-text-index{
+	line-height: 150%;
+	font-size: 18px;
+  margin-left: 1cm;
+}
+}
+
+@media screen and (max-width:430px) {
+  nav li,
+  nav a {
+  	display: block;
+  }
+
+
+.test-about-text-index{
+	line-height: 150%;
+	font-size: 18px;
+  margin-left: 1cm;
+}
+}

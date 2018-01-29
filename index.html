@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assests/stylesheets/index.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="assests/scripts/index.js"></script>
   </head>
   <body>
     <!-- Navigation Bar -->
+    <div id="wrapper">
     <div class="test-top">
 	    <div class="test-navbar test-padding test-card">
 	      <a href="index.html" class="test-navbar test-navbar-item">Gourmet au Catering</a>
 		    <div class="test-right-nav">
 		    	<!-- Right side Navbar -->
-			    <a href="about.html">About</a>
+			    <a onclick="index_about()">About</a>
 			    <a href="menu.html">Menu</a>
 			    <a href="contact.html">Contact</a>
 	      </div>
@@ -105,6 +108,39 @@
     		</form>
     	</div><br><br><br><br><br>
     	<!-- End Of Content -->
+    </div>
+</div>
+    <div id="wrapper-about">
+      <div class="test-top"  id="sidebar">
+        <div class="test-bar test-white test-padding test-card">
+          <a href="index.html" class="test-bar test-bar-item">Gourmet au Catering</a>
+          <div class="test-right-diff">
+            <!-- Right side Navbar -->
+            <a href="about.html" onclick="index_about()" onmouseover="hoverNavActiveFunc()">About</a>
+            <a href="menu.html" onclick="index_menu()" onmouseover="hoverNavFunc()">Menu</a>
+            <a href="contact.html" onclick="index_contact()" onmouseover="hoverNavFunc()">Contact</a>
+          </div>
+        </div>
+      </div>
+      <br><br>
+    <!-- About Section -->
+      <div id="about">
+        <div id="image2" class="test-about-text-about-image">
+          <img src="assests/images/tablesetting2.jpg" width="50%" height="75%" class="test-title" onmouseover="this.src='assests/images/tablesetting2.jpg' " onmouseout="this.src='assests/images/tablesetting.jpg'" >
+        </div>
+        <div class="test-width-about-diff">
+          <h1 class="test-about-heading-index-diff">About-Catering</h1>
+          <br>
+          <h5 class="test-about-sub-heading-index-diff">Tradition since 1889</h5>
+          <p class="test-about-text-index-diff">
+            The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <season class="test-brown-word">seasonal</season> ingredients.
+          </p>
+          <p class="test-brown-color test-about-brown-diff"> 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <img id="myImage" onclick="changeImage()" src="file:///Users/tanmayjain/Desktop/gourmet%20catering/assests/images/pic_bulboff.gif" width="100" height="180">
+        </div>
+      </div>
     </div>
     <!-- Footer -->
     <div  class="test-footer">

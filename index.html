@@ -30,7 +30,8 @@
     <!-- Page Content -->
     <div class= "content">
       <br>	<!-- About Section -->
-    	<div id="about">
+        
+        <div id="about">
     		<div id="image2" class="post test-menu-text-index-image">
     			<img src="assests/images/tablesetting2.jpg" class="test-img-last2 test-img-last2-centre">
     		</div>
@@ -86,7 +87,8 @@
     		<p>
     			You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:
     		</p>
-    		<form>
+        <button type="button" onclick="document.getElementById('booking-form').style.display='block'">Show Form!</button>
+    		<form id="booking-form" style="display: none">
     			<p>
     				<input type="text" placeholder="Name" required name="name">
     			</p>

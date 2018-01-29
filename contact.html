@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assests/stylesheets/index.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="assests/scripts/contact.js"></script>
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -45,8 +47,26 @@
         <p>
           <input type="text" placeholder="Message/ Special Requirements" required name="Message" class="test-textarea">
         </p>
-        <button type="submit">Send Message</button>
+        <button type="submit" class="test-popup-msg">Send Message</button>
       </form>
+    </div>
+    <br>
+<!-- Contact Us Form -->
+    <div id="abc">
+      <div id="popupContact">
+        <form action="#" id="form" method="post" name="form" class="form-form">
+          <img id="close" src="assests/images/3.jpg" onclick ="div_hide()">
+          <h2 class="h2-form">Feedback</h2>
+          <br>
+          <input id="form-name" name="name" placeholder="Name" type="text">
+          <input id="form-email" name="email" placeholder="Email" type="text">
+          <textarea id="msg" name="message" placeholder="Message" class="textarea-form"></textarea>
+          <a href="javascript:%20check_empty()" id="submit-form" onclick="saveForm();debug();">Send</a>
+        </form>
+      </div>
+    </div>
+    <div class="test-popup-button">
+      <button id="popup" class="button-form" onclick="div_show()">Popup</button>
     </div>
   </body>
 </html>

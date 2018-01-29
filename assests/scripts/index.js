@@ -3,43 +3,6 @@ $(function() {
   $('#wrapper-menu').hide();
   $('#wrapper-contact').hide();
 });
-
-function hoverFunc()
-{
-  $(".btn").hover(function(){
-    $(this).css("color", "maroon");
-    }, function(){
-    $(this).css("color", "white");
-  });
-}
-
-function hoverLinkFunc()
-{
-  $(".sidebar-box-help-links a").hover(function(){
-    $(this).css("color", "blue");
-    }, function(){
-    $(this).css("color", "red");
-  });
-}
-
-function hoverPageActiveFunc()
-{
-  $(".pagination .active").hover(function(){
-    $(this).css("background-color", "#df1010");
-    }, function(){
-    $(this).css("background-color", "#df1010");
-  });
-}
-
-function hoverPageFunc()
-{
-  $(".pagination a").hover(function(){
-    $(this).css("background-color", "#ddd");
-    }, function(){
-    $(this).css("background-color", "white");
-  });
-}
-
 //Web 3.0
 
 function index_home(){

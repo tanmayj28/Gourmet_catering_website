@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assests/stylesheets/index.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="assests/scripts/about.js"></script>
   </head>
   <body>
@@ -36,8 +37,14 @@
         <p class="test-brown-color test-about-brown-diff"> 
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
-        <img id="myImage" onclick="changeImage()" src="file:///Users/tanmayjain/Desktop/gourmet%20catering/assests/images/pic_bulboff.gif" width="100" height="180">
+        <img id="myImage" src="assests/images/pic_bulboff.gif" width="100" height="180">
       </div>
     </div>
   </body>
 </html>
+<script type="text/javascript">
+  jQuery(document).ready(function()
+  {
+    var aboutpage = new GC.AboutPage();
+  });
+</script>

@@ -55,18 +55,24 @@
     <div id="abc">
       <div id="popupContact">
         <form action="#" id="form" method="post" name="form" class="form-form">
-          <img id="close" src="assests/images/3.jpg" onclick ="div_hide()">
+          <img id="close" src="assests/images/3.jpg">
           <h2 class="h2-form">Feedback</h2>
           <br>
           <input id="form-name" name="name" placeholder="Name" type="text">
           <input id="form-email" name="email" placeholder="Email" type="text">
           <textarea id="msg" name="message" placeholder="Message" class="textarea-form"></textarea>
-          <a href="javascript:%20check_empty()" id="submit-form" onclick="saveForm();debug();">Send</a>
+          <a href="javascript:%20check_empty()" id="submit-form">Send</a>
         </form>
       </div>
     </div>
     <div class="test-popup-button">
-      <button id="popup" class="button-form" onclick="div_show()">Popup</button>
+      <button id="popup" class="button-form">Popup</button>
     </div>
   </body>
 </html>
+<script type="text/javascript">
+  jQuery(document).ready(function()
+  {
+    var contactpage = new GC.ContactPage();
+  });
+</script>

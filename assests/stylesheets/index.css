@@ -1,3 +1,8 @@
+/*Scroll animation*/
+.fade {
+  opacity: 1;
+}
+
 /*Popup Form*/
 #abc {
   width:100%;
@@ -69,17 +74,14 @@ input[type=datetime-local] {
   font-family:raleway
 }
 #form-name {
-  background-image:url(../images/name.jpg);
   background-repeat:no-repeat;
   background-position:5px 7px
 }
 #form-email {
-  background-image:url(../images/email.png);
   background-repeat:no-repeat;
   background-position:5px 7px
 }
 .textarea-form {
-  background-image:url(../images/msg.png);
   background-repeat:no-repeat;
   background-position:5px 7px;
   width:82%;
@@ -531,7 +533,7 @@ button{
   	font-size: 18px;
     margin-left: 1cm;
   }
-  
+
   .test-about-text-index-diff{
   	line-height: 150%;
   	font-size: 18px;

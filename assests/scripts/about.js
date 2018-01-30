@@ -12,9 +12,9 @@ GC.AboutPage.prototype = {
 		$('#myImage').click(function(){
 			var image = document.getElementById('myImage');
 			if (image.src.match("bulbon")) {
-				image.src = "file:///Users/tanmayjain/Desktop/gourmet%20catering/assests/images/pic_bulboff.gif";
+				image.src = "assests/images/pic_bulboff.gif";
 			} else {
-				image.src = "file:///Users/tanmayjain/Desktop/gourmet%20catering/assests/images/pic_bulbon.gif";
+				image.src = "assests/images/pic_bulbon.gif";
 			}
 		});
 	}

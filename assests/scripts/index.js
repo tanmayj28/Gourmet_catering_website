@@ -35,7 +35,7 @@ GC.IndexPage.prototype = {
     });
   },
   changeImage:function() {
-    $('#myImage').click(function(){
+    $('.test-width-about-diff #myImage').click(function(){
       var image = document.getElementById('myImage');
       if (image.src.match("bulbon")) {
         image.src = "assests/images/pic_bulboff.gif";
@@ -67,7 +67,7 @@ GC.IndexPage.prototype = {
     setInterval(self.showSlides, 2000);
   },
   index_home:function(){
-    $('#home-button').click(function(){
+    $('.test-navbar test-padding test-card #home-button').click(function(){
       $('#wrapper-about').css('display', 'none');
       $('#wrapper-menu').css('display', 'none');
       $('#wrapper-contact').css('display', 'none');
@@ -75,7 +75,7 @@ GC.IndexPage.prototype = {
     });
   },
   index_about:function(){
-    $('#about-button').click(function(){
+    $('.test-right-nav #about-button').click(function(){
       $('#wrapper').css('display', 'none');
       $('#wrapper-menu').css('display', 'none');
       $('#wrapper-contact').css('display', 'none');
@@ -83,7 +83,7 @@ GC.IndexPage.prototype = {
     });
   },
   index_menu:function(){
-    $('#menu-button').click(function(){ 
+    $('.test-right-nav #menu-button').click(function(){ 
       $('#wrapper').css('display', 'none');
       $('#wrapper-about').css('display', 'none');
       $('#wrapper-contact').css('display', 'none');
@@ -92,7 +92,7 @@ GC.IndexPage.prototype = {
   },
 
   index_contact:function(){
-    $('#contact-button').click(function(){ 
+    $('.test-right-nav #contact-button').click(function(){ 
       $('#wrapper').css('display', 'none');
       $('#wrapper-menu').css('display', 'none');
       $('#wrapper-about').css('display', 'none');
@@ -100,7 +100,7 @@ GC.IndexPage.prototype = {
     });
   },
   check_empty:function() {
-    $('#submit-form').click(function(){
+    $('#form #submit-form').click(function(){
       if (document.getElementById('form-name').value == "" || document.getElementById('form-email').value == "" || document.getElementById('msg').value == "") {
         alert("Fill All Fields !");
       }
@@ -111,19 +111,19 @@ GC.IndexPage.prototype = {
   },
 
   div_show:function() {
-    $('#popup').click(function(){
+    $('.test-popup-button #popup').click(function(){
         document.getElementById('abc').style.display = "block";
       });
   },
   
   div_hide:function(){
-    $('#close').click(function(){
+    $('#form #close').click(function(){
       document.getElementById('abc').style.display = "none";
     });
   },
 
   saveForm:function(){
-      $('#submit-form').click(function(){
+    $('#form #submit-form').click(function(){
       $('form input[type=text]').each(function(){
         myForm.push({ name: this.name, value: this.value});
       });
@@ -131,7 +131,7 @@ GC.IndexPage.prototype = {
   },
 
   debug:function(){
-    $('#submit-form').click(function(){
+    $('#form #submit-form').click(function(){
       for (var i = 0; i < myForm.length; i++) {
         console.log(myForm[i].name+': '+myForm[i].value);
         alert("Form Submitted Successfully "+myForm[i].value);

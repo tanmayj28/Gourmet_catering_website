@@ -6,7 +6,7 @@ GC.ContactPage = function() {
 
 GC.ContactPage.prototype = {
 	initialize:function() {
-		var myForm = [];
+		// var myForm = [];
 		this.div_show();
 		this.check_empty();
 		this.saveForm();
@@ -48,6 +48,8 @@ GC.ContactPage.prototype = {
 		$('#submit-form').click(function(){
 			for (var i = 0; i < myForm.length; i++) {
 				console.log(myForm[i].name+': '+myForm[i].value);
+				var message = document.getElementById("form-name").value;
+        display_message.innerHTML= message;
 				alert("Form Submitted Successfully "+myForm[i].value);
 		  }
 	  });

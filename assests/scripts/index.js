@@ -1,6 +1,6 @@
 var GC = GC || {};
 var slideIndex = 0;
-
+var myForm = [];
 GC.IndexPage = function() {
   this.initialize();
 }
@@ -8,7 +8,7 @@ GC.IndexPage = function() {
 GC.IndexPage.prototype = {
   initialize:function() {
     var slideIndex = 0;
-    var myForm = [];
+    // var myForm = [];
     this.changeImage();
     this.showSlides();
     this.index_about();
@@ -16,10 +16,10 @@ GC.IndexPage.prototype = {
     this.index_contact();
     this.index_home();
     this.div_show();
+    this.div_hide();
     this.check_empty();
     this.saveForm();
     this.debug();
-    this.div_hide();
     $(window).on("load",function() {
       $(window).scroll(function() {
         var windowBottom = $(this).scrollTop() + $(this).innerHeight();
@@ -135,6 +135,8 @@ GC.IndexPage.prototype = {
       for (var i = 0; i < myForm.length; i++) {
         console.log(myForm[i].name+': '+myForm[i].value);
         alert("Form Submitted Successfully "+myForm[i].value);
+        var message = document.getElementById("form-name").value;
+        display_message.innerHTML= message;
       }
     });
   }

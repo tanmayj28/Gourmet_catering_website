@@ -1,4 +1,6 @@
 var GC = GC || {};
+var slideIndex = 0;
+var myForm = [];
 GC.IndexPage = function() {
   this.initialize();
 }
@@ -17,6 +19,7 @@ GC.IndexPage.prototype = {
     this.divHidePopup();
     this.checkEmptyPopupData();
     this.saveFormPopup();
+    // this.debugPopup();
   },
   scrollEffect:function() {
     $(window).on("load",function() {
@@ -104,7 +107,7 @@ GC.IndexPage.prototype = {
         alert("Fill All Fields !");
       }
       else {
-        var row = "Feedback Submitted. Thank you " + form.name.value + " and email id as " + form.email.value;
+         var row = "Feedback Submitted. Thank you " + form.name.value + " and email id as " + form.email.value;
         $('#display_message').append(row + '<br>');
         alert("Feedback Submitted Successfully..." + form.name.value);
         alert("Feedback Submitted Successfully..." + form.email.value);

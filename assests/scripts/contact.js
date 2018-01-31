@@ -10,7 +10,7 @@ GC.ContactPage.prototype = {
 		this.div_show();
 		this.check_empty();
 		this.saveForm();
-		this.debug();
+		
 		this.div_hide();
 	},
   check_empty:function() {
@@ -19,7 +19,11 @@ GC.ContactPage.prototype = {
 		    alert("Fill All Fields !");
 		  }
 		  else {
-		    document.getElementById('form').submit();
+	      var row = "Feedback Submitted. Thank you " + form.name.value + " and email id as " + form.email.value;
+	      $('#display_message').append(row + '<br>');
+	      alert("Feedback Submitted Successfully..." + form.name.value);
+	      alert("Feedback Submitted Successfully..." + form.email.value);
+	      document.getElementById('form').reset();
 		  }
     });
   },
@@ -46,12 +50,12 @@ GC.ContactPage.prototype = {
 
 	debug:function(){
 		$('#submit-form').click(function(){
-			for (var i = 0; i < myForm.length; i++) {
-				console.log(myForm[i].name+': '+myForm[i].value);
-				var message = document.getElementById("form-name").value;
-        display_message.innerHTML= message;
-				alert("Form Submitted Successfully "+myForm[i].value);
-		  }
+	    document.getElementById('form');
+      var row = "Feedback Submitted. Thank you " + form.name.value + " and email id as " + form.email.value;
+      $('#display_message').append(row + '<br>');
+      alert("Feedback Submitted Successfully..." + form.name.value);
+      alert("Feedback Submitted Successfully..." + form.email.value);
+      document.getElementById('form').reset()
 	  });
 	}
 }
